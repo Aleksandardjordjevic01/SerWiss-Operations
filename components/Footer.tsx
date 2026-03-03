@@ -69,10 +69,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pb-2">
-          <p className="font-sans text-slate-300 text-xs">
+          <p className="font-sans text-slate-400 text-xs">
             © {new Date().getFullYear()} SerWiss Operations d.o.o. All rights reserved.
           </p>
-          <p className="font-sans text-slate-300 text-[10px]">
+          <p className="font-sans text-slate-400 text-[10px]">
             Design &amp; Developed by{" "}
             <a
               href="https://digantix.com"
