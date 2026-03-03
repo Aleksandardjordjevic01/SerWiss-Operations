@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import React, { useState } from "react";
 
 const services = [
@@ -69,9 +70,13 @@ export default function ServicesCardsSection() {
                 className="group grid grid-cols-[56px_1fr_auto] md:grid-cols-[80px_1fr_auto] items-center gap-6 md:gap-12 py-10 md:py-14 cursor-pointer"
                 onClick={() => toggle(i)}
               >
-                <span className="font-heading italic text-slate-400 text-sm md:text-base tracking-wide select-none">
-                  {s.number}
-                </span>
+                <Image
+                  src="/images/logo-sec.png"
+                  alt="logo"
+                  width={28}
+                  height={28}
+                  className="object-contain select-none"
+                />
 
                 <h3 className={`font-heading font-bold text-lg md:text-xl lg:text-2xl leading-none tracking-tight transition-colors duration-300 ${isOpen ? "text-[#2d5a3d]" : "text-slate-900 group-hover:text-[#2d5a3d]"}`}>
                   {s.title}

@@ -7,6 +7,7 @@ import WhyChooseSection from '@/components/WhyChooseSection';
 import WhyMeSection from '@/components/WhyMeSection';
 import CollaborationSection from '@/components/CollaborationSection';
 import PartnerMatrixSection from '@/components/PartnerMatrixSection';
+import ContactFormSection from '@/components/ContactFormSection';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <WhyMeSection />
       <CollaborationSection />
       <PartnerMatrixSection />
+      <ContactFormSection />
       <Footer />
     </div>
   );
