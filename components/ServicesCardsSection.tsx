@@ -73,21 +73,21 @@ export default function ServicesCardsSection() {
                 <Image
                   src="/images/logo-sec.png"
                   alt="logo"
-                  width={28}
-                  height={28}
+                  width={22}
+                  height={22}
                   className="object-contain select-none"
                 />
 
-                <h3 className={`font-heading font-bold text-lg md:text-xl lg:text-2xl leading-none tracking-tight transition-colors duration-300 ${isOpen ? "text-[#2d5a3d]" : "text-slate-900 group-hover:text-[#2d5a3d]"}`}>
+                <h3 className={`font-heading font-bold text-lg md:text-xl lg:text-2xl leading-none tracking-tight transition-colors duration-300 ${isOpen ? "text-[#0a2d5e]" : "text-slate-900 group-hover:text-[#0a2d5e]"}`}>
                   {s.title}
                 </h3>
 
                 {/* Plus / Minus toggle */}
-                <div className="w-8 h-8 rounded-full border border-slate-300 flex items-center justify-center shrink-0 transition-colors duration-300 group-hover:border-[#2d5a3d]">
+                <div className="w-8 h-8 rounded-full border border-slate-300 flex items-center justify-center shrink-0 transition-colors duration-300 group-hover:border-[#0a2d5e]">
                   <motion.span
                     animate={{ rotate: isOpen ? 45 : 0 }}
                     transition={{ duration: 0.25 }}
-                    className={`font-sans font-light text-xl leading-none select-none ${isOpen ? "text-[#2d5a3d]" : "text-slate-400"}`}
+                    className={`font-sans font-light text-xl leading-none select-none ${isOpen ? "text-[#0a2d5e]" : "text-slate-400"}`}
                   >
                     +
                   </motion.span>
@@ -112,7 +112,7 @@ export default function ServicesCardsSection() {
                       <ul className="flex flex-col gap-3">
                         {s.bullets.map((b, j) => (
                           <li key={j} className="flex items-start gap-3">
-                            <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#2d5a3d] shrink-0" />
+                            <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#0a2d5e] shrink-0" />
                             <span className="font-sans text-slate-500 text-sm md:text-base leading-relaxed">{b}</span>
                           </li>
                         ))}
