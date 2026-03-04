@@ -73,7 +73,7 @@ export function AuroraBackgroundDemo() {
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             whileHover={{
               scale: 1.06,
-              filter: "drop-shadow(0 0 32px rgba(184,240,74,0.35))",
+              filter: "drop-shadow(0 0 32px rgba(19, 161, 238, 0.35))",
             }}
           >
             <Image

@@ -120,9 +120,9 @@ export default function WhyChooseSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="border-t border-white/10 pt-12 max-w-4xl"
+          className="border-t border-white/10 pt-12 max-w-5xl"
         >
-          <p className="font-sans text-white/60 text-lg md:text-xl lg:text-2xl leading-relaxed tracking-tight">
+          <p className="font-sans text-white/60 text-base md:text-lg lg:text-xl text-justify leading-relaxed tracking-tight">
             <span className="font-semibold text-white">The Why:</span> Because success isn&apos;t just about having a plan — it&apos;s about executing it flawlessly. SerWiss Operations is your partner in operational excellence, financial discipline, and global expansion.
           </p>
         </motion.div>

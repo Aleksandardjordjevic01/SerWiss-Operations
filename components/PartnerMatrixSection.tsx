@@ -70,8 +70,8 @@ export default function PartnerMatrixSection() {
               viewport={{ once: true }}
               className="flex items-center gap-3"
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2d5a3d]" />
-              <p className="font-sans text-[#2d5a3d] text-xs tracking-widest uppercase font-semibold">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0a2d5e]" />
+              <p className="font-sans text-[#0a2d5e] text-xs tracking-widest uppercase font-semibold">
                 Integrated Service Portfolio
               </p>
             </motion.div>

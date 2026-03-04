@@ -39,8 +39,8 @@ export default function CollaborationSection() {
             viewport={{ once: true }}
             className="flex items-center gap-3"
           >
-            <div className="w-1.5 h-1.5 rounded-full bg-[#2d5a3d]" />
-            <p className="font-sans text-[#2d5a3d] text-xs tracking-widest uppercase font-semibold">
+            <div className="w-1.5 h-1.5 rounded-full bg-[#0a2d5e]" />
+            <p className="font-sans text-[#0a2d5e] text-xs tracking-widest uppercase font-semibold">
               Press Release &mdash; January 2026
             </p>
           </motion.div>
@@ -76,7 +76,7 @@ export default function CollaborationSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="bg-white p-8 md:p-10 flex flex-col gap-4 group hover:bg-[#f7faf8] transition-colors duration-300"
+              className="bg-white p-8 md:p-10 flex flex-col gap-4 group hover:bg-[#F7F9FA] transition-colors duration-300"
             >
               <div className="h-8 flex items-center">
                 <Image
