@@ -42,7 +42,7 @@ const columns = [
 
 export default function PartnerMatrixSection() {
   return (
-    <section className="relative w-full px-6 md:px-12 lg:px-20 py-24 md:py-32 bg-white overflow-hidden">
+    <section id="references" className="relative w-full px-6 md:px-12 lg:px-20 py-24 md:py-32 bg-white overflow-hidden">
 
       {/* Grid overlay - light version */}
       <div

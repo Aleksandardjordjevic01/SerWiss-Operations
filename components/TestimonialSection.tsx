@@ -10,9 +10,10 @@ interface QuoteSectionProps {
   role: string;
   image: string;
   reversed?: boolean;
+  id?: string;
 }
 
-export function QuoteSection({ quote, name, role, image, reversed = false }: QuoteSectionProps) {
+export function QuoteSection({ quote, name, role, image, reversed = false, id }: QuoteSectionProps) {
   const photoRadius = reversed ? "56px 0px 56px 56px" : "0px 56px 56px 56px";
 
   const photoBlock = (
@@ -55,7 +56,7 @@ export function QuoteSection({ quote, name, role, image, reversed = false }: Quo
   );
 
   return (
-    <section className="w-full bg-white py-20 px-6 md:px-12 lg:px-20">
+    <section id={id} className="w-full bg-white py-20 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row gap-10 md:gap-12 lg:gap-20 items-start md:items-center">
         {reversed ? (
           <>
@@ -78,8 +79,8 @@ export default function TestimonialSection() {
     <QuoteSection
       quote={
         <>
-          <p>Our founder, Natascha Maksimovic, brings extensive experience from living and working in Switzerland, embedding the values of Swiss quality, precision, and reliability into every project.</p>
-          <p className="mt-5">Combined with efficient delivery and competitive pricing, we ensure solutions that create lasting value for your business.</p>
+          <p>Founded by Natascha Maksimovic, SerWiss Operations brings over 20 years of international finance expertise — including 17 years at Novartis — to small and medium-sized enterprises. With Swiss precision and the advantages of nearshoring from Serbia, we deliver financial and administrative services that combine efficiency, transparency, and cost optimization.</p>
+          <p className="mt-5">Our mission is simple: to streamline processes, provide reliable results, and give SMEs access to the same operational excellence that global corporations expect — at attractive prices. At SerWiss Operations, we bridge strategy and execution, helping businesses grow with confidence.</p>
         </>
       }
       name="Natascha Maksimovic"

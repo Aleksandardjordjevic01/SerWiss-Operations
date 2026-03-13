@@ -6,7 +6,7 @@ import React from "react";
 
 export function AuroraBackgroundDemo() {
   return (
-    <section className="relative h-screen w-full overflow-hidden flex items-center px-6 md:px-12 lg:px-20">
+    <section id="home" className="relative h-screen w-full overflow-hidden flex items-center px-6 md:px-12 lg:px-20">
       {/* Vertical gradient: dark green top → white bottom */}
       <div
         className="absolute inset-0 pointer-events-none"

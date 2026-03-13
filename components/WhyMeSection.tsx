@@ -6,6 +6,7 @@ import { QuoteSection } from "@/components/TestimonialSection";
 export default function WhyMeSection() {
   return (
     <QuoteSection
+      id="my-story"
       quote={
         <div className="text-sm md:text-base lg:text-lg font-heading font-bold text-slate-900 leading-relaxed tracking-tight">
           <p>Founded by Natascha Maksimovic, SerWiss Operations brings over 20 years of international finance expertise — including 17 years at Novartis — to small and medium-sized enterprises. With Swiss precision and the advantages of nearshoring from Serbia, we deliver financial and administrative services that combine efficiency, transparency, and cost optimization.</p>

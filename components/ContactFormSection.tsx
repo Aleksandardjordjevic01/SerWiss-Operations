@@ -49,7 +49,7 @@ export default function ContactFormSection() {
   };
 
   return (
-    <section className="relative w-full bg-[#eef6fc] px-6 md:px-12 lg:px-20 py-20 md:py-28 overflow-hidden">
+    <section id="contact" className="relative w-full bg-[#eef6fc] px-6 md:px-12 lg:px-20 py-20 md:py-28 overflow-hidden">
       {/* Subtle grid overlay */}
       <div
         className="absolute inset-0 pointer-events-none"

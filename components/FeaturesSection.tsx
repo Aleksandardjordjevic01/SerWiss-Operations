@@ -5,7 +5,7 @@ import React from "react";
 
 export default function FeaturesSection() {
   return (
-    <section className="w-full bg-white pt-24 pb-24 px-6 md:px-12 lg:px-20">
+    <section id="services" className="w-full bg-white pt-24 pb-24 px-6 md:px-12 lg:px-20">
       <div className="max-w-4xl mx-auto flex flex-col items-center text-center gap-6">
 
         {/* Badge */}
