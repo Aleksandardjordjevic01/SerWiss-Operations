@@ -21,7 +21,7 @@ export default function Footer() {
               className="h-12 w-auto object-contain object-left self-start"
             />
             <p className="font-sans text-slate-400 text-sm leading-relaxed">
-              Your dedicated partner for Nearshore Managed Services from Serbia, with a strong focus on the Swiss market.
+              Your dedicated partner for Nearshore Managed Services from Serbia.
             </p>
           </div>
 

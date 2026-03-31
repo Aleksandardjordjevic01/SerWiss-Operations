@@ -3,12 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#my-story", label: "My Story" },
   { href: "#services", label: "Services" },
-  { href: "#references", label: "References" },
+  { href: "#references", label: "Strategic Partnerships" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -38,12 +39,29 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className={`fixed z-50 bg-white border-gray-200 transition-all duration-300 ${
-      scrolled 
-        ? "top-0 left-0 right-0 border-b shadow-sm" 
-        : "top-6 left-6 right-6 md:left-12 md:right-12 lg:left-50 lg:right-50 border shadow-xs rounded-2xl"
-    }`}>
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <motion.header 
+      className={`fixed z-50 left-0 right-0 ${
+        scrolled ? "top-0" : "top-6 px-6"
+      }`}
+      initial={false}
+    >
+      <motion.div 
+        className={`mx-auto border border-gray-200 ${
+          scrolled 
+            ? "rounded-none border-b shadow-sm" 
+            : "rounded-2xl shadow-xs"
+        }`}
+        style={{ backgroundColor: "white" }}
+        initial={false}
+        animate={{
+          width: scrolled ? "100%" : "min(80rem, 100%)",
+        }}
+        transition={{ 
+          duration: 0.5, 
+          ease: [0.4, 0, 0.2, 1]
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
           <Image
@@ -79,6 +97,7 @@ export default function Header() {
           <span className={`block w-6 h-0.5 bg-gray-900 transition-transform duration-300 origin-center ${open ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
+      </motion.div>
 
       {/* Mobile Drawer */}
       {/* Overlay */}
@@ -136,6 +155,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }
