@@ -77,6 +77,7 @@ export function QuoteSection({ quote, name, role, image, reversed = false, id }:
 export default function TestimonialSection() {
   return (
     <QuoteSection
+      id="my-story"
       quote={
         <>
           <p className="text-justify">Founded by Natascha Maksimovic, with over 20 years of international finance expertise covering various sectors such as pharma, SerWiss Operations combines Swiss precision with the advantages of nearshoring from Serbia. We deliver managed services that bring efficiency, transparency, and cost optimization to SMEs.</p>
