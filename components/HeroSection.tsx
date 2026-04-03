@@ -44,8 +44,7 @@ export function AuroraBackgroundDemo() {
             Operations
           </h1>
           <h2 className="font-sans font-light text-justify text-[#b8dcf5] text-base md:text-lg max-w-xl leading-relaxed">
-            <span className="font-bold">Welcome to SerWiss Operations.</span> We are a dedicated partner for Nearshore Managed Services from Serbia,
-            serving clients with a strong focus on the Swiss market.
+            <span className="font-bold">Welcome to SerWiss Operations.</span> We are a dedicated partner for Nearshore Managed Services from Serbia.
           </h2>
           <div className="flex items-center gap-3 mt-2">
             <button className="bg-white text-slate-900 font-sans font-semibold text-sm px-7 py-4 rounded-full hover:bg-slate-100 transition-colors cursor-pointer">

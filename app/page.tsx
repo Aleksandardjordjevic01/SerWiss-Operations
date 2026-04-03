@@ -20,7 +20,6 @@ export default function Home() {
             <FeaturesSection />
       <ServicesCardsSection />
       <WhyChooseSection />
-      <WhyMeSection />
       <CollaborationSection />
       <PartnerMatrixSection />
       <ContactFormSection />

@@ -44,7 +44,7 @@ export function QuoteSection({ quote, name, role, image, reversed = false, id }:
       >
         &ldquo;
       </span>
-      <div className="font-heading font-bold text-slate-900 text-lg md:text-xl lg:text-2xl leading-tight tracking-tight">
+      <div className="font-heading font-bold text-slate-900 text-lg md:text-base lg:text-xl leading-tight tracking-tight">
         {quote}
       </div>
       <div className="w-full h-px bg-slate-200 my-5 md:my-8" />
@@ -79,8 +79,8 @@ export default function TestimonialSection() {
     <QuoteSection
       quote={
         <>
-          <p>Founded by Natascha Maksimovic, SerWiss Operations brings over 20 years of international finance expertise — including 17 years at Novartis — to small and medium-sized enterprises. With Swiss precision and the advantages of nearshoring from Serbia, we deliver financial and administrative services that combine efficiency, transparency, and cost optimization.</p>
-          <p className="mt-5">Our mission is simple: to streamline processes, provide reliable results, and give SMEs access to the same operational excellence that global corporations expect — at attractive prices. At SerWiss Operations, we bridge strategy and execution, helping businesses grow with confidence.</p>
+          <p className="text-justify">Founded by Natascha Maksimovic, with over 20 years of international finance expertise covering various sectors such as pharma, SerWiss Operations combines Swiss precision with the advantages of nearshoring from Serbia. We deliver managed services that bring efficiency, transparency, and cost optimization to SMEs.</p>
+          <p className="mt-5 text-justify">Our mission is simple: to streamline processes, provide reliable results, and give SMEs access to the same operational excellence that global corporations expect — at attractive prices. At SerWiss Operations, we bridge strategy and execution, helping businesses grow with confidence.</p>
         </>
       }
       name="Natascha Maksimovic"
