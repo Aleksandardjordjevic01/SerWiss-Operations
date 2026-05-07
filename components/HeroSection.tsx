@@ -47,7 +47,10 @@ export function AuroraBackgroundDemo() {
             <span className="font-bold">Welcome to SerWiss Operations.</span> We are a dedicated partner for Nearshore Managed Services from Serbia.
           </h2>
           <div className="flex items-center gap-3 mt-2">
-            <button className="bg-white text-slate-900 font-sans font-semibold text-sm px-7 py-4 rounded-full hover:bg-slate-100 transition-colors cursor-pointer">
+            <button
+              className="bg-white text-slate-900 font-sans font-semibold text-sm px-7 py-4 rounded-full hover:bg-slate-100 transition-colors cursor-pointer"
+              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+            >
               Get in Touch
             </button>
             <button className="w-12 h-12 rounded-full border border-white flex items-center justify-center hover:bg-white/10 transition-colors cursor-pointer">
