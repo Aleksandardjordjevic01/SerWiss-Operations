@@ -28,9 +28,9 @@ export default function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="font-heading font-bold text-slate-900 text-3xl md:text-4xl leading-tight tracking-tight"
+          className="font-heading font-bold text-slate-900 text-3xl md:text-3xl leading-tight tracking-tight"
         >
-          Swiss Quality, Precision,<br />and Reliability in Every Project
+          Our vision is to improve finance operations for SMEs in the DACH region by streamlining process and freeing up your people to focus on growth.
         </motion.h2>
 
         {/* Subtitle */}
@@ -39,9 +39,9 @@ export default function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="font-sans font-light text-slate-500 text-base md:text-lg max-w-2xl leading-relaxed"
+          className="font-sans font-light text-slate-500 text-base md:text-lg max-w-3xl leading-relaxed"
         >
-          From financial administration to controlling — we handle the operational work so you can focus on what matters most.
+          Our purpose is to be your diligent bees – taking care of essential work with precision and consistency, adding value without friction, so your team can thrive.
         </motion.p>
 
       </div>
